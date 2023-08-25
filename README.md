@@ -16,7 +16,7 @@ Add emailjs service_id, template_id, and user_id before using emailjs form.
 
 **Install the git repo**
 
-<pre>git clone https://github.com/jameslovescoding/personal-portfolio-website</pre>
+<pre>git clone [git repo]</pre>
 
 **Install yarn**
 
