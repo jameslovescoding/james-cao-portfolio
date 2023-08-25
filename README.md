@@ -11,6 +11,9 @@ Add emailjs service_id, template_id, and user_id before using emailjs form.
 - REACT_APP_EMAILJS_SERVICE_ID=<service_id>
 - REACT_APP_EMAILJS_TEMPLATE_ID=<template_id>
 - REACT_APP_EMAILJS_USER_ID=<user_id>
+- GENERATE_SOURCEMAP=false
+- DISABLE_ESLINT_PLUGIN=true
+- NODE_VERSION=16.19.1
 
 ### Setup
 
@@ -33,6 +36,10 @@ Install yarn to test and build the website. You can use the link [here](https://
 **Build the web-page**
 
 <pre>yarn build</pre>
+
+**Build command on Render**
+
+<pre>yarn install && yarn predeploy</pre>
 
 ### More
 
