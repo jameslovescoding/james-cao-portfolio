@@ -4,6 +4,7 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 import Typewriter from "typewriter-effect";
 import { introdata, meta } from "../../content_option";
 import { Link } from "react-router-dom";
+import ResumeButton from "../../components/resumebutton";
 
 export const Home = () => {
   return (
@@ -42,7 +43,7 @@ export const Home = () => {
                 </h1>
                 <div className="mb-30 intro-description">{introdata.description}</div>
                 <div className="intro_btn-action pb-5 home-button-container">
-                  <Link to="/portfolio" className="text_2">
+                  <Link to="/portfolio" className="text_2 full">
                     <div id="button_h" className="ac_btn btn ">
                       Portfolio
                       <div className="ring one"></div>
@@ -66,6 +67,10 @@ export const Home = () => {
                       <div className="ring three"></div>
                     </div>
                   </Link>
+
+                </div>
+                <div className="resume-button-container">
+                  <ResumeButton />
                 </div>
               </div>
             </div>

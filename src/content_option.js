@@ -133,7 +133,7 @@ const skills = [
     },
     {
         name: (<>
-            <span>Node</span>
+            <span>Node.js</span>
         </>)
     },
     {
@@ -143,12 +143,12 @@ const skills = [
     },
     {
         name: (<>
-            <span>HTML</span>
+            <span>HTML5</span>
         </>)
     },
     {
         name: (<>
-            <span>CSS</span>
+            <span>CSS3</span>
         </>)
     },
     {
@@ -164,6 +164,11 @@ const skills = [
     {
         name: (<>
             <span>Flask</span>
+        </>)
+    },
+    {
+        name: (<>
+            <span>SQL</span>
         </>)
     },
     {
@@ -189,6 +194,11 @@ const skills = [
     {
         name: (<>
             <span>Alembic</span>
+        </>)
+    },
+    {
+        name: (<>
+            <span>Git</span>
         </>)
     },
     {
