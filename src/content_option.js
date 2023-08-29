@@ -26,7 +26,7 @@ const introdata = {
 const dataabout = {
     title: "Who am I?",
     aboutme: (<>
-        <p>My Chinese name is “曹宇”. My last name is Cao, and it prounces as "Tsao". You could call me James.</p>
+        <p>My Chinese name is “曹宇”.My last name is Cao, and it pronounced as "Tsao". You could call me James.</p>
         <p>I'm a graduate of Tsinghua University,
             often ranked among the top educational institutions in China,
             where I specialized in Electrical Engineering.
