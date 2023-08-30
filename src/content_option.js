@@ -250,6 +250,7 @@ const contactConfig = {
 const socialprofils = {
     github: "https://github.com/jameslovescoding",
     linkedin: "https://www.linkedin.com/in/james-cao-15a0b477/",
+    wellfound: "https://wellfound.com/u/yu-cao-12",
 };
 
 export {
