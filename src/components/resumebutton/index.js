@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 
 const resumebutton = () => {
 
-  const resumeUrl = 'Cao_James_Resume_Full_Stack_Web_Dev.pdf';
+  const resumeUrl = 'Yu_James_Cao_Resume_Full_Stack_Web_Dev.pdf';
 
   const openResume = () => {
     window.open(resumeUrl, '_blank');

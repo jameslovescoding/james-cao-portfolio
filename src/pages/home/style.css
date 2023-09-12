@@ -124,7 +124,6 @@ section {
 
 .intro_sec .text h1 {
     font-size: 30px;
-    margin-bottom: 50px;
     font-weight: 700;
 }
 
@@ -261,10 +260,16 @@ section {
     }
 
     .intro-description {
-        margin-bottom: 50px;
+        margin-top: 50px;
     }
 
 }
+
+.intro-description {
+    margin-bottom: 50px;
+}
+
+
 
 .intro_sec .h_bg-image .block .wrap-icon {
     font-size: 40px;

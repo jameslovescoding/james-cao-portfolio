@@ -2,7 +2,7 @@ import React from "react";
 
 const logotext = "J.C.";
 const meta = {
-    title: "James Cao",
+    title: "James Cao Portfolio",
     description: "I'm James Cao, a entrepeurer and full stack web developer.",
 };
 
@@ -17,8 +17,7 @@ const introdata = {
         // add more if you'd like but make sure to update /src/pages/home/index.js Line 29
     },
     description: (<>
-        <p>Re-shape the World with Technologies and Innovations.</p>
-        <p>Open to new offers now!</p>
+        <p>Highly skilled <b>software engineer</b> with over <b>3 years of experience</b> in implementing complex software solutions, utilizing design patterns and best practices. Seeking a challenging role as a <b>web developer</b> in a dynamic and innovative organization. <b>Green Card holder</b> with the legal right to work in the US without requiring visa sponsorship. Prefer the flexibility for <b>remote work</b> or a hybrid arrangement in the <b>Greater Boston area.</b></p>
     </>),
     your_img_url: "https://avatars.githubusercontent.com/u/89162119?v=4",
 };
@@ -26,7 +25,7 @@ const introdata = {
 const dataabout = {
     title: "Who am I?",
     aboutme: (<>
-        <p>My Chinese name is “曹宇”.My last name is Cao, and it pronounced as "Tsao". You could call me James.</p>
+        <p>My Chinese name is “曹宇”. My last name is Cao, and it pronounced as "Tsao". You could call me James.</p>
         <p>I'm a graduate of Tsinghua University,
             often ranked among the top educational institutions in China,
             where I specialized in Electrical Engineering.
@@ -66,52 +65,83 @@ const dataabout = {
 const worktimeline = [
     {
         jobtitle: "Stay Home Dad",
-        where: "Career Break",
-        date: "2021-2022",
+        employer: "Career Break",
+        whereAndWhen: "Boston, MA | 2021/05 - 2023/03",
+        projects: [
+            {
+                project: "Solved 300+ problems on LeetCode."
+            },
+            {
+                project: "Learned iOS & Swift course by Dr. Angela Yu on Udemy.com."
+            },
+            {
+                project: "Learned Machine Learning and Deep Learning course by Andrew Ng on Coursera.com."
+            },
+        ],
     },
     {
-        jobtitle: "Co-founder and CTO",
-        where: "Skelmet Inc.",
-        date: "2016-2021",
+        jobtitle: "Co-founder / CTO",
+        employer: "Skelmet Inc.",
+        whereAndWhen: "Boston, MA | 2016/03 - 2021/05",
+        projects: [
+            {
+                project: "Co-founded the company as CTO and spearheaded the development of the industry's first parametric design system for personalized custom-fit sunglass frames, securing $500,000 in angel investment. Recognized by Forbes 30 Under 30 in 2018 and featured in several other prominent magazines in 2018."
+            },
+            {
+                project: "Served as the principal investigator for an NIH-funded research program in collaboration with Mass Eye and Ear Hospital, leading the design of medical devices for vision rehabilitation. These innovations positively impacted 20+ patients, significantly improving their eye functions from ptosis. Secured a total of $150,000 in funding for the Phase I program in 2019."
+            },
+            {
+                project: "Led a dynamic software development team in the creation of multiple 3D scanning apps on the iOS platform, facilitating precise head measurements for customized eyewear frame design. Accumulated over 1000 valuable 3D head scanning samples, which played a pivotal role in product research and development in 2019."
+            },
+            {
+                project: "Developed the company's e-commerce shopping website utilizing WordPress, HTML, CSS, and Javascript, effectively managing a high volume of orders and contributing to a revenue of $50,000 in 2020."
+            },
+            {
+                project: "Innovated and designed a patented hinge system for sunglasses frames, initiating contact with the manufacturer and successfully delivering a premium-quality product to the market in 2019."
+            },
+            {
+                project: "Designed and Implemented a PDF generation system showing custom-fit specs using Python and Latex, letting customers know better about the uniqueness of their sunglasses frames, which are used in hundreds of orders."
+            },
+        ],
     },
 ];
 
 const educationtimeline = [
     {
+        school: "App Academy",
+        whereAndWhen: "Fulltime Online | 2023/03 - 2023/09",
+        description: "1000-hour immersive full-stack web development program with <3% acceptance rate",
+        degree: "Teaches full-stack web development: Python, SQL, JavaScript, React, TDD, algorithms, design patterns, and programming best practices. Topics include TDD, scalability, algorithms, OOP, coding style, REST, security, single-page apps, and web development best practices.",
+    },
+    {
         school: "Columbia University",
-        major: "Electrical Engineering",
-        date: "2014-2015",
+        whereAndWhen: "New York City, NY | 2014/09 - 2015/12",
+        description: "Ivy League, one of the top five universities in the US",
+        degree: "Master of Science in Electrical Engineering",
     },
     {
         school: "Tsinghua University",
-        major: "Electrical Engineering",
-        date: "2010-2014",
-    }
+        whereAndWhen: "Beijing, China | 2010/09 - 2014/07",
+        description: "The top engineering university in China",
+        degree: "Bachelor of Science in Electrical Engineering",
+    },
 ]
 
-const entrepeurership = [
+const award = [
     {
         name: "Forbes 30 under 30",
-        where: "USA",
-        date: "2018",
+        whereAndWhen: "North America | 2018",
+        description: "An annual list published by Forbes magazine that recognizes outstanding individuals under the age of 30 who have achieved notable success and made significant contributions in their respective fields."
     },
     {
-        name: "MassChallenge Silver Award, Final List",
-        where: "Boston",
-        date: "2018",
+        name: "MassChallenge Silver Award",
+        whereAndWhen: "Boston, MA | 2018",
+        description: "A global nonprofit accelerator program and competition that supports early-stage startups by providing resources, mentorship, and access to potential investors and partners."
     },
     {
         name: "HAX Growth Accelerator",
-        where: "San Francisco",
-        date: "2017"
-    }
-]
-
-const activities = [
-    {
-        name: "Full Stack Web Developer Program",
-        where: "App Academy",
-        date: "2023",
+        whereAndWhen: "San Francisco, CA | 2017",
+        description: "A program designed to foster the growth of hardware startups by providing funding, mentorship, and access to a network of experts and resources, with a focus on product development and scaling."
     }
 ]
 
@@ -264,6 +294,5 @@ export {
     contactConfig,
     socialprofils,
     logotext,
-    entrepeurership,
-    activities,
+    award,
 };

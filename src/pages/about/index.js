@@ -8,8 +8,7 @@ import {
   worktimeline,
   skills,
   educationtimeline,
-  entrepeurership,
-  activities,
+  award,
 } from "../../content_option";
 import BackButton from "../../components/backbutton";
 
@@ -35,26 +34,37 @@ export const About = () => {
           <Col lg="5">
             <h3 className="color_sec py-4">{dataabout.title}</h3>
           </Col>
-          <Col lg="7" className="d-flex align-items-center">
+          <Col lg="7" className="d-flex align-items-center pt-4">
             <div>
-              <p>{dataabout.aboutme}</p>
+              {dataabout.aboutme}
             </div>
           </Col>
         </Row>
-        <Row className=" sec_sp">
+        <Row className="sec_sp">
           <Col lg="5">
             <h3 className="color_sec py-4">Work Timeline</h3>
           </Col>
-          <Col lg="7">
+          <Col lg="7" className="pt-4">
             <table className="table caption-top">
               <tbody>
                 {worktimeline.map((data, i) => {
-                  return (
-                    <tr key={i}>
-                      <th scope="row">{data.jobtitle}</th>
-                      <td>{data.where}</td>
-                      <td>{data.date}</td>
+                  return (<>
+                    <tr key={`tr-${data.jobtitle}-1`} className="first-row">
+                      <th scope="row">{data.jobtitle}, {data.employer}</th>
+                      <td><p>{data.whereAndWhen}</p></td>
                     </tr>
+                    <tr key={`tr-${data.jobtitle}-2`}>
+                      <td colSpan="2">
+                        <ul>
+                          {data.projects.map((project, j) => {
+                            return (<>
+                              <li key={`ul-work-${i}-${j}`}><p><i className="fa-solid fa-bolt"></i> {project.project}</p></li>
+                            </>)
+                          })}
+                        </ul>
+                      </td>
+                    </tr>
+                  </>
                   );
                 })}
               </tbody>
@@ -66,7 +76,7 @@ export const About = () => {
           <Col lg="5">
             <h3 className="color_sec py-4">Skills</h3>
           </Col>
-          <Col lg="7" className="grid-container">
+          <Col lg="7" className="grid-container pt-4">
             {skills.map((skills, i) => {
               return (
                 <div key={i}>
@@ -80,61 +90,54 @@ export const About = () => {
             })}
           </Col>
         </Row>
-        <Row className=" sec_sp">
-          <Col lg="5">
-            <h3 className="color_sec py-4">Activities</h3>
-          </Col>
-          <Col lg="7">
-            <table className="table caption-top">
-              <tbody>
-                {activities.map((data, i) => {
-                  return (
-                    <tr key={i}>
-                      <th scope="row">{data.name}</th>
-                      <td>{data.where}</td>
-                      <td>{data.date}</td>
-                    </tr>
-                  );
-                })}
-              </tbody>
-            </table>
-          </Col>
-        </Row>
-        <Row className=" sec_sp">
+        <Row className="sec_sp">
           <Col lg="5">
             <h3 className="color_sec py-4">Education</h3>
           </Col>
-          <Col lg="7">
+          <Col lg="7" className="pt-4">
             <table className="table caption-top">
               <tbody>
                 {educationtimeline.map((data, i) => {
-                  return (
+                  return (<>
                     <tr key={i}>
                       <th scope="row">{data.school}</th>
-                      <td>{data.major}</td>
-                      <td>{data.date}</td>
+                      <td><p>{data.whereAndWhen}</p></td>
                     </tr>
-                  );
+                    <tr>
+                      <td colSpan="2">
+                        <ul>
+                          <li key={`ul-edu-${i}-1`}><p><i className="fa-solid fa-bolt"></i> {data.description}</p></li>
+                          <li key={`ul-edu-${i}-2`}><p><i className="fa-solid fa-bolt"></i> {data.degree}</p></li>
+                        </ul>
+                      </td>
+                    </tr>
+                  </>);
                 })}
               </tbody>
             </table>
           </Col>
         </Row>
-        <Row className=" sec_sp">
+        <Row className="sec_sp">
           <Col lg="5">
-            <h3 className="color_sec py-4">Entrepreneurship</h3>
+            <h3 className="color_sec py-4">Award</h3>
           </Col>
-          <Col lg="7">
+          <Col lg="7" className="pt-4">
             <table className="table caption-top">
               <tbody>
-                {entrepeurership.map((data, i) => {
-                  return (
+                {award.map((data, i) => {
+                  return (<>
                     <tr key={i}>
                       <th scope="row">{data.name}</th>
-                      <td>{data.where}</td>
-                      <td>{data.date}</td>
+                      <td><p>{data.whereAndWhen}</p></td>
                     </tr>
-                  );
+                    <tr>
+                      <td colSpan="2">
+                        <ul>
+                          <li key={`ul-award-${i}`}><p><i className="fa-solid fa-bolt"></i> {data.description}</p></li>
+                        </ul>
+                      </td>
+                    </tr>
+                  </>);
                 })}
               </tbody>
             </table>
