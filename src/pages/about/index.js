@@ -50,18 +50,18 @@ export const About = () => {
                 {worktimeline.map((data, i) => {
                   return (<>
                     <tr key={`tr-${data.jobtitle}-1`} className="first-row">
-                      <th scope="row">{data.jobtitle}, {data.employer}</th>
-                      <td><p>{data.whereAndWhen}</p></td>
+                      <th scope="row"><h4>{data.jobtitle}, {data.employer}</h4></th>
+                    </tr>
+                    <tr>
+                      <td><p><i className="fa-solid fa-location-dot"></i> {data.where} | <i className="fa-regular fa-calendar-days"></i> {data.when}</p></td>
                     </tr>
                     <tr key={`tr-${data.jobtitle}-2`}>
                       <td colSpan="2">
-                        <ul>
-                          {data.projects.map((project, j) => {
-                            return (<>
-                              <li key={`ul-work-${i}-${j}`}><p><i className="fa-solid fa-bolt"></i> {project.project}</p></li>
-                            </>)
-                          })}
-                        </ul>
+                        {data.projects.map((project, j) => {
+                          return (<>
+                            <p><i className="fa-solid fa-bolt"></i> {project.project}</p>
+                          </>)
+                        })}
                       </td>
                     </tr>
                   </>
@@ -100,15 +100,15 @@ export const About = () => {
                 {educationtimeline.map((data, i) => {
                   return (<>
                     <tr key={i}>
-                      <th scope="row">{data.school}</th>
-                      <td><p>{data.whereAndWhen}</p></td>
+                      <th scope="row"><h4>{data.school}</h4></th>
                     </tr>
                     <tr>
-                      <td colSpan="2">
-                        <ul>
-                          <li key={`ul-edu-${i}-1`}><p><i className="fa-solid fa-bolt"></i> {data.description}</p></li>
-                          <li key={`ul-edu-${i}-2`}><p><i className="fa-solid fa-bolt"></i> {data.degree}</p></li>
-                        </ul>
+                      <td><p><i className="fa-solid fa-location-dot"></i> {data.where} | <i className="fa-regular fa-calendar-days"></i> {data.when}</p></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p><i className="fa-solid fa-bolt"></i> {data.description}</p>
+                        <p><i className="fa-solid fa-bolt"></i> {data.degree}</p>
                       </td>
                     </tr>
                   </>);
@@ -127,14 +127,14 @@ export const About = () => {
                 {award.map((data, i) => {
                   return (<>
                     <tr key={i}>
-                      <th scope="row">{data.name}</th>
-                      <td><p>{data.whereAndWhen}</p></td>
+                      <th scope="row"><h4>{data.name}</h4></th>
                     </tr>
                     <tr>
-                      <td colSpan="2">
-                        <ul>
-                          <li key={`ul-award-${i}`}><p><i className="fa-solid fa-bolt"></i> {data.description}</p></li>
-                        </ul>
+                      <td><p><i className="fa-solid fa-location-dot"></i> {data.where} | <i className="fa-regular fa-calendar-days"></i> {data.when}</p></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p><i className="fa-solid fa-bolt"></i> {data.description}</p>
                       </td>
                     </tr>
                   </>);

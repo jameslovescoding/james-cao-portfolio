@@ -15,6 +15,10 @@
     width: 300px;
 }
 
+.table h4 {
+    color: #1efc43cb;
+}
+
 .t_border {
     border-color: var(--text-color) !important;
 }

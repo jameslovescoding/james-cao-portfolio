@@ -66,7 +66,8 @@ const worktimeline = [
     {
         jobtitle: "Stay Home Dad",
         employer: "Career Break",
-        whereAndWhen: "Boston, MA | 2021/05 - 2023/03",
+        where: "Boston, MA",
+        when: "2021/05 - 2023/03",
         projects: [
             {
                 project: "Solved 300+ problems on LeetCode."
@@ -80,9 +81,10 @@ const worktimeline = [
         ],
     },
     {
-        jobtitle: "Co-founder / CTO",
+        jobtitle: "Co-founder and CTO",
         employer: "Skelmet Inc.",
-        whereAndWhen: "Boston, MA | 2016/03 - 2021/05",
+        where: "Boston, MA",
+        when: "2016/03 - 2021/05",
         projects: [
             {
                 project: "Co-founded the company as CTO and spearheaded the development of the industry's first parametric design system for personalized custom-fit sunglass frames, securing $500,000 in angel investment. Recognized by Forbes 30 Under 30 in 2018 and featured in several other prominent magazines in 2018."
@@ -109,19 +111,22 @@ const worktimeline = [
 const educationtimeline = [
     {
         school: "App Academy",
-        whereAndWhen: "Fulltime Online | 2023/03 - 2023/09",
-        description: "1000-hour immersive full-stack web development program with <3% acceptance rate",
+        where: "Fulltime Online",
+        when: "2023/03 - 2023/09",
+        description: "A rigorous six-month, full-time online program for full-stack web development, 1000-hour immersive learning and training, with <3% acceptance rate and >50% elimination rate.",
         degree: "Teaches full-stack web development: Python, SQL, JavaScript, React, TDD, algorithms, design patterns, and programming best practices. Topics include TDD, scalability, algorithms, OOP, coding style, REST, security, single-page apps, and web development best practices.",
     },
     {
         school: "Columbia University",
-        whereAndWhen: "New York City, NY | 2014/09 - 2015/12",
+        where: "New York City, NY",
+        when: "2014/09 - 2015/12",
         description: "Ivy League, one of the top five universities in the US",
         degree: "Master of Science in Electrical Engineering",
     },
     {
         school: "Tsinghua University",
-        whereAndWhen: "Beijing, China | 2010/09 - 2014/07",
+        where: "Beijing, China",
+        when: "2010/09 - 2014/07",
         description: "The top engineering university in China",
         degree: "Bachelor of Science in Electrical Engineering",
     },
@@ -130,17 +135,20 @@ const educationtimeline = [
 const award = [
     {
         name: "Forbes 30 under 30",
-        whereAndWhen: "North America | 2018",
+        where: "North America",
+        when: "2018",
         description: "An annual list published by Forbes magazine that recognizes outstanding individuals under the age of 30 who have achieved notable success and made significant contributions in their respective fields."
     },
     {
         name: "MassChallenge Silver Award",
-        whereAndWhen: "Boston, MA | 2018",
+        where: "Boston, MA",
+        when: "2018",
         description: "A global nonprofit accelerator program and competition that supports early-stage startups by providing resources, mentorship, and access to potential investors and partners."
     },
     {
         name: "HAX Growth Accelerator",
-        whereAndWhen: "San Francisco, CA | 2017",
+        where: "San Francisco, CA",
+        when: "2017",
         description: "A program designed to foster the growth of hardware startups by providing funding, mentorship, and access to a network of experts and resources, with a focus on product development and scaling."
     }
 ]
