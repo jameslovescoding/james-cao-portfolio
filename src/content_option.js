@@ -17,7 +17,7 @@ const introdata = {
         // add more if you'd like but make sure to update /src/pages/home/index.js Line 29
     },
     description: (<>
-        <p>Highly skilled <b>software engineer</b> with over <b>3 years of experience</b> in implementing complex software solutions, utilizing design patterns and best practices. Seeking a challenging role as a <b>web developer</b> in a dynamic and innovative organization. <b>Green Card holder</b> with the legal right to work in the US without requiring visa sponsorship. Prefer the flexibility for <b>remote work</b> or a hybrid arrangement in the <b>Greater Boston area.</b></p>
+        <p>Highly skilled <b>software engineer</b> with over <b>5 years of experience</b> in implementing complex software solutions, utilizing design patterns and best practices. Seeking a challenging role as a <b>web developer</b> in a dynamic and innovative organization. <b>Green Card holder</b> with the legal right to work in the US without requiring visa sponsorship. Prefer the flexibility for <b>remote work</b> or a hybrid arrangement in the <b>Greater Boston area.</b></p>
     </>),
     your_img_url: "https://avatars.githubusercontent.com/u/89162119?v=4",
 };
